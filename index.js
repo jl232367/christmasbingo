@@ -42,33 +42,40 @@ const fullBingoOptions = [
 ];
 
 let currentBingoOptions = [];
-
+// Implemented function to check for duplicates in original generation and swap options from main array
 let duplicateChecker = () => {
-    let duplicateRemovedCurrentBingoOptions = [... new Set(currentBingoOptions)];
 
-    if (duplicateRemovedCurrentBingoOptions < 25) {
-        while (duplicateRemovedCurrentBingoOptions < 25) {
-            aNewBingoOption = fullBingoOptions[Math.floor(Math.random() * fullBingoOptions.length)];
-            duplicateRemovedCurrentBingoOptions.push(aNewBingoOption);
-            duplicateRemovedCurrentBingoOptions = [... new Set(duplicateRemovedCurrentBingoOptions)];
-            console.log("Replaced duplicate");
-        } 
-        //console.log(currentBingoOptions);
-        currentBingoOptions = duplicateRemovedCurrentBingoOptions;
-        console.log(currentBingoOptions + "If statement");
-        return;
-        
-    } else {
+    
+    let duplicateRemovedCurrentBingoOptions = [... new Set(currentBingoOptions)];
+    // check for appropriate array length to avoid multiple list generation
+    if (duplicateRemovedCurrentBingoOptions.length == 25) {
         console.log(currentBingoOptions);
-        currentBingoOptions = duplicateRemovedCurrentBingoOptions;
-        console.log(currentBingoOptions);
+        console.log(currentBingoOptions.length);
         return;
     }
+
+    for(let i = duplicateRemovedCurrentBingoOptions.length; i < 25; i = duplicateRemovedCurrentBingoOptions.length) {
+        aNewBingoOption = fullBingoOptions[Math.floor(Math.random() * fullBingoOptions.length)];
+        duplicateRemovedCurrentBingoOptions.push(aNewBingoOption);
+        duplicateRemovedCurrentBingoOptions = [... new Set(duplicateRemovedCurrentBingoOptions)];
+        currentBingoOptions = duplicateRemovedCurrentBingoOptions;
+        console.log("replaced duplicate");
+    }
+    console.log(currentBingoOptions);
+    console.log(currentBingoOptions.length);
+
+    
         
 }
 
 // function to randomly select 25 DIFFERENT bingo options
 let pickCurrentBingoOptions = () => {
+
+    if (currentBingoOptions.length == 25) {
+        console.log(currentBingoOptions);
+        console.log(currentBingoOptions.length);
+        return;
+    }
     for (let i = 0; i < 25; i++) {
         let newCurrentBingoOption = fullBingoOptions[Math.floor(Math.random() * fullBingoOptions.length)];
         //duplicateChecker(newCurrentBingoOption, currentBingoOptions, 25);
@@ -133,4 +140,28 @@ if (currentBingoOptions.length >= 1) {
                 //console.log("Replacement bingo option pushed");
             }
         }
+
+
+
+        if (duplicateRemovedCurrentBingoOptions.length < 25) {
+        for (let i = duplicateRemovedCurrentBingoOptions.length; i < 25; i++) {
+            aNewBingoOption = fullBingoOptions[Math.floor(Math.random() * fullBingoOptions.length)];
+            duplicateRemovedCurrentBingoOptions.push(aNewBingoOption);
+            duplicateRemovedCurrentBingoOptions = [... new Set(duplicateRemovedCurrentBingoOptions)];
+            console.log()
+            console.log("Replaced duplicate");
+        } 
+        //console.log(currentBingoOptions);
+        currentBingoOptions = duplicateRemovedCurrentBingoOptions;
+        console.log(currentBingoOptions + "If statement");
+        console.log(currentBingoOptions.length);
+        return;
+        
+    } else {
+        console.log(duplicateRemovedCurrentBingoOptions);
+        currentBingoOptions = duplicateRemovedCurrentBingoOptions;
+        console.log(currentBingoOptions);
+        console.log("New duplicate array");
+        return;
+    }
 */
