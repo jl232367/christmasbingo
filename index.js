@@ -88,6 +88,30 @@ let pickCurrentBingoOptions = () => {
     }
     duplicateChecker();
 }
+
+// function to generate bingo board
+let boardGenerator = () => {
+    let boardContainerElement = document.getElementById("boardContainer");
+    for (let i = 0; i < 25; i++) {
+        let optionContainer = document.createElement("div")
+        let optionText = document.createElement("h3")
+        let optionTextFromArray = currentBingoOptions[i];
+        optionContainer.setAttribute("id", "optioncontainer" + i);
+        optionContainer.setAttribute("class", "optionContainer");
+        optionText.setAttribute('class', "optionText");
+        optionText.setAttribute('id', 'optionText' + i);
+        
+        boardContainerElement.append(optionContainer);
+        optionContainer.append(optionText);
+        optionText.innerText = optionTextFromArray;
+    }
+    
+}
+
+pickCurrentBingoOptions();
+boardGenerator();
+
+//landingPageLoader();
 // buttons to pick new current bingo options
 
 // have them stored in 5 different arrays for each row
