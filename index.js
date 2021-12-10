@@ -2,7 +2,7 @@
 
 const fullBingoOptions = [
     "Someone learns the meaning of christmas.",
-    "Talk to animal/inanimate object",
+    "Talk to animal or inanimate object",
     "Affair",
     "Dead Relative mentioned.",
     "Event that no one would go to, that everyone goes to",
