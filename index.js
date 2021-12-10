@@ -21,7 +21,7 @@ const fullBingoOptions = [
     "love versus career",
     "Airport scene",
     "Over eager best friend or sibling",
-    "I am a journalist/architect/small business/photographer",
+    "I am a journalist/architect/photographer",
     "Mistaken identity",
     "I have a confession to make or been lieing",
     "Family Business is going under",
