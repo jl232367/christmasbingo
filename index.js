@@ -94,7 +94,7 @@ let boardGenerator = () => {
     let boardContainerElement = document.getElementById("boardContainer");
     for (let i = 0; i < 25; i++) {
         let optionContainer = document.createElement("div")
-        let optionText = document.createElement("h3")
+        let optionText = document.createElement("p")
         let optionTextFromArray = currentBingoOptions[i];
         optionContainer.setAttribute("id", "optioncontainer" + i);
         optionContainer.setAttribute("class", "optionContainer");
