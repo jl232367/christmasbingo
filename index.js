@@ -80,7 +80,8 @@ const fullBingoOptions = [
     "Rugged Hunk secretly rich",
     "Lifted child to put star on tree",
     "childhood friend suddenly hot",
-    "out of place because from big city"
+    "Out of place because from big city",
+    "Workaholic significant other"
 ];
 
 let currentBingoOptions = [];
