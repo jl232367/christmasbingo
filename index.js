@@ -132,6 +132,18 @@ let pickCurrentBingoOptions = () => {
     duplicateChecker();
 }
 
+function backgroundColorFlipper(element) {
+    //let element = this.id;
+    if (element.style.backgroundColor == "") {
+        element.style.backgroundColor = "blue";
+        return;
+
+    } else {
+        element.style.backgroundColor = "";
+        return;
+    }
+}
+
 // function to generate bingo board
 let boardGenerator = () => {
     let boardContainerElement = document.getElementById("boardContainer");
@@ -141,6 +153,16 @@ let boardGenerator = () => {
         let optionTextFromArray = currentBingoOptions[i];
         optionContainer.setAttribute("id", "optioncontainer" + i);
         optionContainer.setAttribute("class", "optionContainer");
+        optionContainer.addEventListener('click', () => {
+            if (optionContainer.style.backgroundColor == "white") {
+                optionContainer.style.backgroundColor = "blue";
+                    return;
+
+            } else {
+                 optionContainer.style.backgroundColor = "white";
+                return;
+            }
+            });
         optionText.setAttribute('class', "optionText");
         optionText.setAttribute('id', 'optionText' + i);
         

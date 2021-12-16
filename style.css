@@ -26,7 +26,7 @@ p {
 }
 .optionContainer {
 
-     
+    background-color: white;
     width: 61px;
     height: 61px;
     min-height: 19%;
@@ -44,6 +44,11 @@ p {
     height: 100px;
     width: 100%;
     margin: auto;
+    text-align: center;
+}
+.christmasbingotitle {
+    margin: auto;
+    text-align: center;
 }
 
 .bingoFooter {
