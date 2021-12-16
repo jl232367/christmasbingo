@@ -156,10 +156,12 @@ let boardGenerator = () => {
         optionContainer.addEventListener('click', () => {
             if (optionContainer.style.backgroundColor == "white") {
                 optionContainer.style.backgroundColor = "blue";
+                optionContainer.style.color = "white";
                     return;
 
             } else {
                  optionContainer.style.backgroundColor = "white";
+                 optionContainer.style.color = "black";
                 return;
             }
             });
