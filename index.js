@@ -16,9 +16,9 @@ const fullBingoOptions = [
     "single parent",
     "Characters stare at Christmas treee",
     "Hot santa who fucks",
-    "improperly tied scarf",
-    "insanely early proposal or I love you",
-    "love versus career",
+    "Improperly tied scarf",
+    "Insanely early proposal or I love you",
+    "Love versus career",
     "Airport scene",
     "Over eager best friend or sibling",
     "I am a journalist, architect, or photographer",
@@ -135,7 +135,7 @@ let pickCurrentBingoOptions = () => {
 function backgroundColorFlipper(element) {
     //let element = this.id;
     if (element.style.backgroundColor == "") {
-        element.style.backgroundColor = "blue";
+        element.style.backgroundColor = "#a90101";
         return;
 
     } else {
@@ -155,7 +155,7 @@ let boardGenerator = () => {
         optionContainer.setAttribute("class", "optionContainer");
         optionContainer.addEventListener('click', () => {
             if (optionContainer.style.backgroundColor == "white") {
-                optionContainer.style.backgroundColor = "blue";
+                optionContainer.style.backgroundColor = "#a90101";
                 optionText.style.color = "white";
                     return;
 
