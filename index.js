@@ -44,7 +44,7 @@ const fullBingoOptions = [
     "Fancy Christmas Party",
     "Unrealistic Job",
     "Out of league relationship",
-    "Snot in unexpected location",
+    "Snow in unexpected location",
     "Characters fall on top of eachother",
     "Characters are with 'wrong partner'",
     "Illegal action forgiven because Christmas",
@@ -56,7 +56,7 @@ const fullBingoOptions = [
     "Ice Skating",
     "Kids",
     "The other Man/woman",
-    "Character named Nick",
+    "Character has Xmas Name",
     "Fake Snow",
     "Plot hole",
     "Small town setting",
@@ -79,7 +79,7 @@ const fullBingoOptions = [
     "Special Christmas tradition",
     "Rugged Hunk secretly rich",
     "Lifted child to put star on tree",
-    "childhood friend suddenly hot",
+    "Childhood friend suddenly hot",
     "Out of place because from big city",
     "Workaholic significant other"
 ];
